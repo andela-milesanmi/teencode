@@ -8,12 +8,14 @@ import IneligiblePage from './components/partner_leads/ineligible/Index';
 import AppreciationPage from './components/partner_leads/appreciation/Index';
 import EligibilityCheck from './components/partner_leads/eligibility_check/Index';
 import PartnerLeadsPage from './components/partner_leads/Index';
+import ContactUsPage from './components/contactUs/ContactUsPage';
 
 export default (
   <Route>
     <Route path="/" component={App} >
       <IndexRoute component={HomePage} />
       <Route path="curriculum" component={CurriculumPage} />
+      <Route path="contact-us" component={ContactUsPage} />
     </Route>
 
     <Route path="/partner-leads" component={PartnerLeadsPage} >
